@@ -1,0 +1,33 @@
+{
+    "name": "@0x/contract-addresses",
+    "version": "1.0.1",
+    "engines": {
+        "node": ">=6.12"
+    },
+    "description": "Used to get known addresses of deployed 4k contracts",
+    "main": "lib/src/index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "build": "yarn tsc -b",
+        "build:ci": "yarn build",
+        "clean": "shx rm -rf lib"
+    },
+    "gitpkg": {
+        "registry": "git@github.com:4KMarket/gitpkg-registry.git"
+        
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/4KMarket/4k_monorepo.git"
+    },
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/4KMarket/4k_monorepo/issues"
+    },
+    "homepage": "https://github.com/0xProject/0x-monorepo/packages/contract-addresses/README.md",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
+    }
+}
